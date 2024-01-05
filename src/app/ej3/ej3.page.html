@@ -1,0 +1,15 @@
+<app-c2 titulo="EJERCICIO 3"></app-c2>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let color of colores" size="6">
+        <app-c3 [color]="color"></app-c3>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+<ion-button [routerLink]="'/ej2'">EJERCICIO 2</ion-button>
+<ion-button [routerLink]="'/home'">EJERCICIO 1</ion-button>
+</ion-content>
+
